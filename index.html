@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback UI Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="feedback-container">
+        <div class="feedback-card">
+            <div class="feedback-header">
+                <h2>Como foi sua experiência?</h2>
+                <p>Nos ajude a melhorar nossos serviços</p>
+            </div>
+
+            <div class="rating-section">
+                <div class="rating-stars">
+                    <i class="fas fa-star" data-rating="1"></i>
+                    <i class="fas fa-star" data-rating="2"></i>
+                    <i class="fas fa-star" data-rating="3"></i>
+                    <i class="fas fa-star" data-rating="4"></i>
+                    <i class="fas fa-star" data-rating="5"></i>
+                </div>
+                <div class="rating-labels">
+                    <span>Péssimo</span>
+                    <span>Regular</span>
+                    <span>Bom</span>
+                    <span>Muito Bom</span>
+                    <span>Excelente</span>
+                </div>
+            </div>
+
+            <form class="feedback-form">
+                <div class="form-group">
+                    <label for="name">Seu Nome</label>
+                    <input type="text" id="name" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Seu Email</label>
+                    <input type="email" id="email" placeholder="Digite seu email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="feedback">Seu Feedback</label>
+                    <textarea id="feedback" placeholder="Conte-nos sobre sua experiência..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Como você nos conheceu?</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="source" value="google" required>
+                            <span>Google</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="source" value="social" required>
+                            <span>Redes Sociais</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="source" value="friend" required>
+                            <span>Indicação</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Quais recursos você mais utilizou?</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-option">
+                            <input type="checkbox" value="design" required>
+                            <span>Design</span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" value="performance" required>
+                            <span>Performance</span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" value="support" required>
+                            <span>Suporte</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn" disabled>
+                    <span>Enviar Feedback</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+
+            <div class="feedback-success">
+                <i class="fas fa-check-circle"></i>
+                <h3>Obrigado pelo seu feedback!</h3>
+                <p>Seu comentário é muito importante para nós.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
